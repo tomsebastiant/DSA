@@ -1,4 +1,4 @@
-package datastructures;
+package datastructures.binarytree;
 
 import java.util.ArrayList;
 
