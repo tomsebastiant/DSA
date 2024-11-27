@@ -102,7 +102,54 @@ public class StringMethods {
 //        System.out.println("ABC\n".repeat(3).indent(8));                // indent added in jdk15
         System.out.println("-".repeat(20));                         // repeat added in jdk11
 
-//        System.out.println("    ABC\n".repeat(3).indent(-2));
-
     }
+/*
+Output of the above
+    Length = 11
+First Character is H
+Last Character is d
+--------------------
+Index of r is 8
+Index of World is 6
+Index of l is 2
+Last index of l is 9
+Index of l is 3
+Last index of l is 3
+--------------------
+Length = 3
+String is blank
+First Character is
+Last Character is
+--------------------
+Index of r is -1
+Index of World is -1
+Index of l is -1
+Last index of l is -1
+Index of l is -1
+Last index of l is -1
+--------------------
+hello world
+Values match ignoring case
+It starts with Hel
+It ends with rld
+It contains with llo
+--------------------
+startingIndex = 6
+Birth year = 1982
+Month = 11
+newDate = 25/11/1982
+newDate = 25/11/1982
+newDate = 25/11/1982
+newDate = 25/11/1982
+25-11-1982
+005/11/19800
+25-11/1982
+25---11---1982
+ABC
+ABC
+ABC
+
+--------------------
+ */
+
 }
