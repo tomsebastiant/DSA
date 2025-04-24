@@ -1,4 +1,4 @@
-package datastructures.linkedlist;
+package leetcode.linkedlist;
 
 // To be used for the LeetCode questions
 

@@ -1,6 +1,5 @@
 package leetcode.linkedlist;
 
-import datastructures.linkedlist.ListNode;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
@@ -22,9 +21,24 @@ class E_206_E_206_ReverseLinkedListTest {
     }
 
     private int[] toArray(ListNode head) {
-        return java.util.stream.Stream.iterate(head, n -> n != null, n -> n.next)
-                .mapToInt(n -> n.val)
-                .toArray();
+        // First, count the number of nodes
+        int size = 0;
+        ListNode curr = head;
+        while (curr != null) {
+            size++;
+            curr = curr.next;
+        }
+
+        // Then, collect the values into an array
+        int[] result = new int[size];
+        curr = head;
+        int i = 0;
+        while (curr != null) {
+            result[i++] = curr.val;
+            curr = curr.next;
+        }
+
+        return result;
     }
 
     @Test
