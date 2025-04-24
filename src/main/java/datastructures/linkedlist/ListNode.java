@@ -3,9 +3,9 @@ package datastructures.linkedlist;
 // To be used for the LeetCode questions
 
 public class ListNode {
-      int val;
-      ListNode next;
+      public int val;
+      public ListNode next;
       ListNode() {}
-      ListNode(int val) { this.val = val; }
-      ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+      public ListNode(int val) { this.val = val; }
+      public ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  }
