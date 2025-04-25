@@ -11,7 +11,7 @@ import java.util.List;
  Traverse using recursion. Traverse left node, add current value, traverse right node
 
  Approach 2 :Iteration
- In a stack contstantly add the left node, till we reach the end. Add the last node reached.
+ In a stack constantly add the left node, till we reach the end. Add the last node reached.
  Move to the right value after that
 
  while (curr != null || !stack.isEmpty()) {

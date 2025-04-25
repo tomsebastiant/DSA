@@ -83,4 +83,69 @@ public class BinaryTree {
         leftViewUtil(root.left,level+1,result);
         leftViewUtil(root.right,level+1,result);
     }
+
+/**
+ https://leetcode.com/problems/maximum-depth-of-binary-tree
+ Given the root of a binary tree, return its maximum depth.
+
+ A binary tree's maximum depth is the number of nodes along the longest
+ path from the root node down to the farthest leaf node.
+
+ Approach :Recursion
+ The depth at a current level is 1 + max depth of your left or right tree
+ */
+
+    public int maxDepth(Node root) {
+        if(root==null){
+            return 0;
+        }
+        return 1+Math.max(maxDepth(root.left),maxDepth(root.right));
+    }
+
+    /**
+     https://leetcode.com/problems/symmetric-tree
+     Given the root of a binary tree, check whether it is a mirror of itself (i.e., symmetric around its center).
+
+     Approach :Recursion
+     As we traverse down, the mirror of the tree should be same, that makes it symmetric
+     */
+
+    public boolean isSymmetric(Node root) {
+        return isMirror(root.left,root.right);
+    }
+
+    public boolean isMirror(Node node1,Node node2){
+        if(node1==null && node2==null){
+            return true;
+        }
+        if(node1==null || node2==null){
+            return false;
+        }
+        return node1.data==node2.data && isMirror(node1.left,node2.right) && isMirror(node1.right,node2.left);
+    }
+
+    /**
+     https://leetcode.com/problems/path-sum
+     Given the root of a binary tree and an integer targetSum, return true
+     if the tree has a root-to-leaf path such that adding up all the values
+     along the path equals targetSum.
+
+     A leaf is a node with no children.
+
+     Approach :Recursion
+     We recurse down tree and check the sum only at leafs. If we're not at leaf, we traverse further down
+     */
+
+    public boolean hasPathSum(Node root, int targetSum) {
+        if(root==null){
+            return false;
+        }
+
+        targetSum-=root.data;
+        if(root.left==null && root.right==null && targetSum==0){
+            return true;
+        }
+
+        return hasPathSum(root.left,targetSum) || hasPathSum(root.right,targetSum);
+    }
 }
