@@ -11,13 +11,13 @@ package leetcode.linkedlist;
 public class E_206_ReverseLinkedList {
 
     public ListNode reverseList(ListNode head) {
-        ListNode node = head;
+        ListNode curr = head;
         ListNode prev = null;
-        while(node!=null){
-            ListNode next = node.next;
-            node.next=prev;
-            prev=node;
-            node=next;
+        while(curr!=null){
+            ListNode next = curr.next;
+            curr.next=prev;
+            prev=curr;
+            curr=next;
         }
         return prev;
     }
