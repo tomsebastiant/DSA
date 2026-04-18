@@ -1,5 +1,6 @@
 package leetcode.tree;
 
+import common.TreeNode;
 /**
  Tags:
  https://leetcode.com/problems/distribute-coins-in-binary-tree

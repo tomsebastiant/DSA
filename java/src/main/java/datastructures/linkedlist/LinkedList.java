@@ -1,7 +1,7 @@
 package datastructures.linkedlist;
 
 
-import leetcode.linkedlist.ListNode;
+import common.ListNode;
 
 public class LinkedList {
 

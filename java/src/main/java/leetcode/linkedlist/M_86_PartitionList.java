@@ -1,5 +1,7 @@
 package leetcode.linkedlist;
 
+import common.ListNode;
+
 /**
  Tags:
  https://leetcode.com/problems/partition-list

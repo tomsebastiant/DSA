@@ -1,5 +1,7 @@
 package leetcode.linkedlist;
 
+import common.ListNode;
+
 /**
  https://leetcode.com/problems/palindrome-linked-list
  Given the head of a singly linked list, return true if it is a palindrome or false otherwise.

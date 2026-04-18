@@ -1,6 +1,6 @@
 package datastructures.binarytree;
 
-import leetcode.tree.TreeNode;
+import common.TreeNode;
 
 /**
  * A Binary Search Tree (BST) is a type of binary tree where each node has at most two children

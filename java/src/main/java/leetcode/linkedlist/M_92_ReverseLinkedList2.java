@@ -1,5 +1,7 @@
 package leetcode.linkedlist;
 
+import common.ListNode;
+
 /**
  https://leetcode.com/problems/reverse-linked-list-ii
  Given the head of a singly linked list and two integers left and right where left <= right,

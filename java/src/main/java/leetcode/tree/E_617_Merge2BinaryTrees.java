@@ -1,5 +1,6 @@
 package leetcode.tree;
 
+import common.TreeNode;
 /**
  https://leetcode.com/problems/merge-two-binary-trees
  You are given two binary trees root1 and root2.

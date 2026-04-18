@@ -1,5 +1,6 @@
 package leetcode.tree;
 
+import common.Node;
 import org.junit.jupiter.api.Test;
 
 import java.util.*;

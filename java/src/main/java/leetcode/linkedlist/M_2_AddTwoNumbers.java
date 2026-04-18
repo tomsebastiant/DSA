@@ -1,5 +1,7 @@
 package leetcode.linkedlist;
 
+import common.ListNode;
+
 /**
  https://leetcode.com/problems/add-two-numbers
  You are given two non-empty linked lists representing two non-negative integers.

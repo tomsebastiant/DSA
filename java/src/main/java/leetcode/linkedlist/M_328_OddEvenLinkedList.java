@@ -1,5 +1,7 @@
 package leetcode.linkedlist;
 
+import common.ListNode;
+
 /**
  https://leetcode.com/problems/odd-even-linked-list
  Given the head of a singly linked list, group all the nodes with odd indices together
