@@ -1,4 +1,4 @@
-package problems.bfsdfs;
+package problems.graph;
 
 /**
  * LC: 200

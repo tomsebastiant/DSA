@@ -1,4 +1,4 @@
-package problems.bfsdfs;
+package problems.graph;
 
 import org.junit.jupiter.api.Test;
 

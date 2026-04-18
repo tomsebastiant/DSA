@@ -1,4 +1,4 @@
-package problems.bfsdfs;
+package problems.graph;
 
 import java.util.List;
 import java.util.Stack;
