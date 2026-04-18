@@ -1,0 +1,52 @@
+package problems.tree;
+
+import common.TreeNode;
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * LC: 94
+ https://leetcode.com/problems/binary-tree-inorder-traversal
+ Given the root of a binary tree, return the inorder traversal of its nodes' values.
+
+ Approach 1 :Recursion
+ Traverse using recursion. Traverse left node, add current value, traverse right node
+
+ Approach 2 :Iteration
+ In a stack constantly add the left node, till we reach the end. Add the last node reached.
+ Move to the right value after that
+
+ while (curr != null || !stack.isEmpty()) {
+     while (curr != null) {
+         stack.push(curr);
+         curr = curr.left;
+     }
+     curr = stack.pop();
+     res.add(curr.val);
+     curr = curr.right;
+ }
+
+
+ Tags: Tree
+ Tags: DFS
+ */
+public class E_BinaryTreeInorder {
+    public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> output = new ArrayList<>();
+        inOrder(root,output);
+        return output;
+    }
+
+    public void inOrder(TreeNode root, List output){
+        if(root == null) return;
+
+        inOrder(root.left,output);
+        output.add(root.val);
+        inOrder(root.right,output);
+
+    }
+}
+
+
+
+

@@ -6,6 +6,8 @@ public class SelectionSort {
      * unsorted portion and swapping it with the first unsorted element.
      * This process continues until the entire array is sorted.
      *
+     * Tags: SortingAlgorithm
+     *
      * Time Complexity: Best O(n^2), Average O(n^2), Worst O(n^2)
      * Space Complexity: O(1)
      */

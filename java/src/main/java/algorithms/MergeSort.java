@@ -43,6 +43,8 @@ public class MergeSort {
      * efficiently counts inversions while sorting the array.
      * ie, total number of pairs (i, j) where i < j and nums[i] > nums[j]
      *
+     * Tags: SortingAlgorithm
+     *
      * Time Complexity: O(n log n)
      * Space Complexity: O(n)
      */

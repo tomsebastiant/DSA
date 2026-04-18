@@ -21,6 +21,8 @@ public class QuickSelectSort {
      * Finally, swap pivot 3 with the element at i + 1 -> [2, 1, 3, 4, 7]
      * Here, 3 is in its sorted position, smaller values are on the left, and greater values are on the right.
      *
+     * Tags: SortingAlgorithm
+     *
      * Quick Sort Time Complexity: Best O(n log n), Average O(n log n), Worst O(n^2)
      * Quick Sort Space Complexity: Best O(log n), Average O(log n), Worst O(n)
      * Quick Select Time Complexity: Best O(n), Average O(n), Worst O(n^2)

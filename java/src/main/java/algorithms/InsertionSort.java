@@ -8,6 +8,8 @@ public class InsertionSort {
      * Move to the third element and compare it with the first two elements and put at its correct position
      * Repeat until the entire array is sorted
      *
+     * Tags: SortingAlgorithm
+     *
      * Time Complexity: Best O(n), Average O(n^2), Worst O(n^2)
      * Space Complexity: O(1)
      */
