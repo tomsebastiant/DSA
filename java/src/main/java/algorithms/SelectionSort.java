@@ -1,10 +1,14 @@
 package algorithms;
 
 public class SelectionSort {
-    //
-    //    It sorts an array by repeatedly selecting the smallest (or largest) element from the
-    //    unsorted portion and swapping it with the first unsorted element.
-    //    This process continues until the entire array is sorted.
+    /*
+     * It sorts an array by repeatedly selecting the smallest (or largest) element from the
+     * unsorted portion and swapping it with the first unsorted element.
+     * This process continues until the entire array is sorted.
+     *
+     * Time Complexity: Best O(n^2), Average O(n^2), Worst O(n^2)
+     * Space Complexity: O(1)
+     */
 
     static void selectionSort(int[] arr){
         int n = arr.length;
