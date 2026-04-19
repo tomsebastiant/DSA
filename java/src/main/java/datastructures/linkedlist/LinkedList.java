@@ -1,67 +1,146 @@
 package datastructures.linkedlist;
 
-
 import common.ListNode;
 
 public class LinkedList {
 
-    /**
-     https://leetcode.com/problems/linked-list-cycle
-     Given head, the head of a linked list, determine if the linked list has a cycle in it.
+    private ListNode head;
+    private int size;
 
-     There is a cycle in a linked list if there is some node in the list that can be reached
-     again by continuously following the next pointer. Return true if there is a cycle in the linked list. Otherwise, return false.
+    public LinkedList() {
+        this.head = null;
+        this.size = 0;
+    }
 
-     Approach:  Use slow and fast pointers. If they meet cycle exists
-     */
+    public ListNode getHead() {
+        return head;
+    }
 
-    public boolean hasCycle(ListNode head) {
-        if(head==null){
-            return false;
+    public int size() {
+        return size;
+    }
+
+    public boolean isEmpty() {
+        return size == 0;
+    }
+
+    public void insertFirst(int val) {
+        head = new ListNode(val, head);
+        size++;
+    }
+
+    public void insertLast(int val) {
+        ListNode node = new ListNode(val);
+        if (head == null) {
+            head = node;
+        } else {
+            ListNode curr = head;
+            while (curr.next != null) {
+                curr = curr.next;
+            }
+            curr.next = node;
         }
-        ListNode slow=head;
-        ListNode fast=head;
-        while(fast!=null && fast.next!=null){
-            slow=slow.next;
-            fast=fast.next.next;
-            if(fast==slow){
+        size++;
+    }
+
+    public void insertAt(int index, int val) {
+        if (index <= 0 || head == null) {
+            insertFirst(val);
+            return;
+        }
+        if (index >= size) {
+            insertLast(val);
+            return;
+        }
+
+        ListNode prev = head;
+        for (int i = 1; i < index; i++) {
+            prev = prev.next;
+        }
+        prev.next = new ListNode(val, prev.next);
+        size++;
+    }
+
+    public void deleteFirst() {
+        if (head == null) {
+            return;
+        }
+        head = head.next;
+        size--;
+    }
+
+    public void deleteLast() {
+        if (head == null) {
+            return;
+        }
+        if (head.next == null) {
+            head = null;
+            size = 0;
+            return;
+        }
+
+        ListNode prev = head;
+        ListNode curr = head.next;
+        while (curr.next != null) {
+            prev = curr;
+            curr = curr.next;
+        }
+        prev.next = null;
+        size--;
+    }
+
+    public void deleteByValue(int val) {
+        if (head == null) {
+            return;
+        }
+
+        if (head.val == val) {
+            deleteFirst();
+            return;
+        }
+
+        ListNode prev = head;
+        ListNode curr = head.next;
+        while (curr != null) {
+            if (curr.val == val) {
+                prev.next = curr.next;
+                size--;
+                return;
+            }
+            prev = curr;
+            curr = curr.next;
+        }
+    }
+
+    public boolean search(int val) {
+        ListNode curr = head;
+        while (curr != null) {
+            if (curr.val == val) {
                 return true;
             }
+            curr = curr.next;
         }
         return false;
     }
 
-    /**
-     https://leetcode.com/problems/merge-two-sorted-lists
-     You are given the heads of two sorted linked lists list1 and list2.
+    public void display() {
+        System.out.println(this);
+    }
 
-     Merge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists.
-
-     Return the head of the merged linked list.
-
-     Approach:  Use a dummy node to start, traverse both lists and keep adding to new list the lower value.
-     One list may not be fully traversed. Add its elements also to the merged list
-     */
-
-    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-        ListNode dummy = new ListNode(0);
-        ListNode merged=dummy;
-        while(list1!=null && list2!=null){
-            if(list1.val<list2.val){
-                merged.next=list1;
-                list1=list1.next;
-            } else {
-                merged.next=list2;
-                list2=list2.next;
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        ListNode curr = head;
+        while (curr != null) {
+            builder.append(curr.val);
+            if (curr.next != null) {
+                builder.append(" -> ");
             }
-            merged=merged.next;
+            curr = curr.next;
         }
-        if(list1!=null){
-            merged.next=list1;
+        if (builder.length() == 0) {
+            return "[]";
         }
-        if(list2!=null){
-            merged.next=list2;
-        }
-        return dummy.next;
+        return builder.toString();
     }
 }

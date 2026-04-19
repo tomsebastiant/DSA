@@ -1,6 +1,9 @@
 package datastructures.binarytree;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Queue;
 
 class Node {
     int data;
@@ -15,57 +18,17 @@ class Node {
 }
 
 
+/**
+ * A binary tree is a hierarchical data structure where each node has at most two children:
+ * a left child and a right child. Unlike a binary search tree, the values do not follow any
+ * ordering rule, so traversal and structural helpers are often the main operations.
+ */
 public class BinaryTree {
 
-//    To check if a Tree is Binary Search Tree
-//    Left Subtree: All the nodes in the left subtree of a node have keys less than the node's key.
-//    Right Subtree: All the nodes in the right subtree of a node have keys greater than the node's key.
-//    This rule applies recursively to every subtree in the tree.
-
-//    Start with a range defined by a very large minimum and maximum value (initially set to negative and positive infinity).
-//    For each node, check if its value is within the valid range.
-//    Recursively check the left and right subtrees with updated bounds:
-//    The left subtree should have all values less than the current node’s value.
-//    The right subtree should have all values greater than the current node’s value.
-//    If any node violates the BST property, return false.
-
-    boolean isBST(Node root) {
-        int MIN = Integer.MIN_VALUE;
-        int MAX = Integer.MAX_VALUE;
-        return isBSTUtil(root,MIN,MAX);
-    }
-
-    public boolean isBSTUtil(Node root, int min, int max){
-        if(root == null){
-            return true;
-        }
-
-        if(root.data<min || root.data>max){
-            return false;
-        }
-
-        return isBSTUtil(root.left,min,root.data) && isBSTUtil(root.right,root.data,max);
-    }
-
-//    Consider the following binary tree:
-//
-//              1
-//            /   \
-//            2     3
-//           / \   / \
-//          4   5 6   7
-//               /
-//              8
-//    Left View of this tree would be: [1, 2, 4, 8].
-//      Breadth First Search (BFS), where we process nodes level by level using a queue. At each level,
-//      we enqueue all the nodes, but only add the first node at each level to the result list.
-//
-//      •Steps:
-//
-//            1.Use a queue to perform level order traversal.
-//            2.For each level, add the first node to the result list.
-//            3.Enqueue left and right children of the current node in that order to maintain the correct sequence.
-
+    /**
+     * Returns the left view of the tree.
+     * DFS is used with level tracking so we record the first node seen at each depth.
+     */
     ArrayList<Integer> leftView(Node root) {
         ArrayList<Integer> result = new ArrayList<>();
         leftViewUtil(root,0,result);
@@ -84,68 +47,155 @@ public class BinaryTree {
         leftViewUtil(root.right,level+1,result);
     }
 
-/**
- https://leetcode.com/problems/maximum-depth-of-binary-tree
- Given the root of a binary tree, return its maximum depth.
-
- A binary tree's maximum depth is the number of nodes along the longest
- path from the root node down to the farthest leaf node.
-
- Approach :Recursion
- The depth at a current level is 1 + max depth of your left or right tree
- */
-
-    public int maxDepth(Node root) {
-        if(root==null){
+    /**
+     * Counts the number of nodes in the tree.
+     */
+    public int size(Node root) {
+        if (root == null) {
             return 0;
         }
-        return 1+Math.max(maxDepth(root.left),maxDepth(root.right));
+        return 1 + size(root.left) + size(root.right);
     }
 
     /**
-     https://leetcode.com/problems/symmetric-tree
-     Given the root of a binary tree, check whether it is a mirror of itself (i.e., symmetric around its center).
-
-     Approach :Recursion
-     As we traverse down, the mirror of the tree should be same, that makes it symmetric
+     * Returns the height of the tree.
+     * Height is the number of nodes on the longest path from root to leaf.
      */
-
-    public boolean isSymmetric(Node root) {
-        return isMirror(root.left,root.right);
-    }
-
-    public boolean isMirror(Node node1,Node node2){
-        if(node1==null && node2==null){
-            return true;
+    public int height(Node root) {
+        if (root == null) {
+            return 0;
         }
-        if(node1==null || node2==null){
-            return false;
-        }
-        return node1.data==node2.data && isMirror(node1.left,node2.right) && isMirror(node1.right,node2.left);
+        return 1 + Math.max(height(root.left), height(root.right));
     }
 
     /**
-     https://leetcode.com/problems/path-sum
-     Given the root of a binary tree and an integer targetSum, return true
-     if the tree has a root-to-leaf path such that adding up all the values
-     along the path equals targetSum.
-
-     A leaf is a node with no children.
-
-     Approach :Recursion
-     We recurse down tree and check the sum only at leafs. If we're not at leaf, we traverse further down
+     * Counts the number of leaf nodes in the tree.
      */
+    public int countLeaves(Node root) {
+        if (root == null) {
+            return 0;
+        }
+        if (root.left == null && root.right == null) {
+            return 1;
+        }
+        return countLeaves(root.left) + countLeaves(root.right);
+    }
 
-    public boolean hasPathSum(Node root, int targetSum) {
-        if(root==null){
+    /**
+     * Inorder traversal visits nodes in left, root, right order.
+     */
+    public List<Integer> inorder(Node root) {
+        List<Integer> result = new ArrayList<>();
+        inorder(root, result);
+        return result;
+    }
+
+    private void inorder(Node root, List<Integer> result) {
+        if (root == null) {
+            return;
+        }
+        inorder(root.left, result);
+        result.add(root.data);
+        inorder(root.right, result);
+    }
+
+    /**
+     * Preorder traversal visits nodes in root, left, right order.
+     */
+    public List<Integer> preorder(Node root) {
+        List<Integer> result = new ArrayList<>();
+        preorder(root, result);
+        return result;
+    }
+
+    private void preorder(Node root, List<Integer> result) {
+        if (root == null) {
+            return;
+        }
+        result.add(root.data);
+        preorder(root.left, result);
+        preorder(root.right, result);
+    }
+
+    /**
+     * Postorder traversal visits nodes in left, right, root order.
+     */
+    public List<Integer> postorder(Node root) {
+        List<Integer> result = new ArrayList<>();
+        postorder(root, result);
+        return result;
+    }
+
+    private void postorder(Node root, List<Integer> result) {
+        if (root == null) {
+            return;
+        }
+        postorder(root.left, result);
+        postorder(root.right, result);
+        result.add(root.data);
+    }
+
+    /**
+     * Level-order traversal visits nodes breadth-first, level by level.
+     */
+    public List<Integer> levelOrder(Node root) {
+        List<Integer> result = new ArrayList<>();
+        if (root == null) {
+            return result;
+        }
+
+        Queue<Node> queue = new ArrayDeque<>();
+        queue.offer(root);
+        while (!queue.isEmpty()) {
+            Node node = queue.poll();
+            result.add(node.data);
+            if (node.left != null) {
+                queue.offer(node.left);
+            }
+            if (node.right != null) {
+                queue.offer(node.right);
+            }
+        }
+        return result;
+    }
+
+    /**
+     * Searches the tree for a value using DFS.
+     */
+    public boolean search(Node root, int target) {
+        if (root == null) {
             return false;
         }
-
-        targetSum-=root.data;
-        if(root.left==null && root.right==null && targetSum==0){
+        if (root.data == target) {
             return true;
         }
+        return search(root.left, target) || search(root.right, target);
+    }
 
-        return hasPathSum(root.left,targetSum) || hasPathSum(root.right,targetSum);
+    /**
+     * Returns the mirror image of the tree.
+     */
+    public Node mirror(Node root) {
+        if (root == null) {
+            return null;
+        }
+        Node mirrored = new Node(root.data);
+        mirrored.left = mirror(root.right);
+        mirrored.right = mirror(root.left);
+        return mirrored;
+    }
+
+    /**
+     * Mirrors the tree in place by swapping the left and right children of every node.
+     */
+    public Node mirrorInPlace(Node root) {
+        if (root == null) {
+            return null;
+        }
+
+        Node temp = root.left;
+        root.left = mirrorInPlace(root.right);
+        root.right = mirrorInPlace(temp);
+        return root;
     }
 }
