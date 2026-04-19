@@ -2,4 +2,17 @@ from .assign_cookies import E_AssignCookies
 from .buy_sell_stock1 import E_BuySellStock1
 from .can_place_flowers import E_CanPlaceFlowers
 from .contains_duplicate import E_ContainsDuplicate
+from .candy import H_Candy
+from .trapping_rain_water import H_TrappingRainWater
+from .three_sum_closest import M_3SumClosest
+from .arrows_to_burst_balloons import M_ArrowsToBurstBalloons
+from .buy_sell_stock2 import M_BuySellStock2
+from .container_with_most_water import M_ContainerWithMostWater
+from .gas_station import M_GasStation
+from .hand_of_straights import M_HandOfStraights
+from .jump_game import M_JumpGame
+from .jump_game2 import M_JumpGame2
+from .non_overlapping_intervals import M_NonOverlappingIntervals
+from .queue_build_with_height import M_QueueBuildWithHeight
+from .two_sum_2 import M_TwoSum2
 from .pascals_triangle import E_PascalsTriangle
