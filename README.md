@@ -4,8 +4,9 @@ Personal DSA learning and problem practice repo.
 
 ## Progress
 
-**Total problems solved: 42**
-Language: Java 21
+**Total problems solved**
+Java: 50
+Python: 19
 Build: Maven
 
 ## Structure
