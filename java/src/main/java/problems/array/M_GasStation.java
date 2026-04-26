@@ -41,7 +41,7 @@ package problems.array;
 
 
  Approach:
- Since it is circular, if totalGas <=TotalCost, you are guaranteed to be able to make the trip.
+ Since it is circular, if totalGas >=TotalCost, you are guaranteed to be able to make the trip.
  To find the start point, you just need to keep reducing the calculate the balance gas
  and when the balance gas falls below 0, try the next the start point
  */
