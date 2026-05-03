@@ -6,16 +6,17 @@ import java.util.List;
 
 /**
  * LC: 515
- Tags: Tree
- Tags: DFS
- https://leetcode.com/problems/find-largest-value-in-each-tree-row
- Given the root of a binary tree, return an array of the largest value in each row of the tree (0-indexed).
-
- Approach 1: Traverse using DFS recursion and pass in the level index. At each level index compare if the current
- node value is the largest, then assign it.
-
- Approach 2: Traverse it using BFS using queues. In each iteration compare and find the highest value
-
+ * https://leetcode.com/problems/find-largest-value-in-each-tree-row
+ * Given the root of a binary tree, return an array of the largest value in each row of the tree (0-indexed).
+ *
+ * Example 1:
+ *
+ * Input: root = [1,3,2,5,3,null,9]
+ * Output: [1,3,9]
+ *
+ * Approach: DFS recursion. Track the current level and update the maximum value seen for that level.
+ * Tags: Tree
+ * Tags: DFS
  */
 public class M_LargestValueInTreeRow {
     public List<Integer> largestValues(TreeNode root) {

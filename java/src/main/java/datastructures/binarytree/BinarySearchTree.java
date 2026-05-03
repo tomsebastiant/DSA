@@ -133,8 +133,18 @@ public class BinarySearchTree {
     }
 
     /**
-     * Inorder traversal visits nodes in left, root, right order.
-     * For a BST, this returns the values in sorted ascending order.
+     * LC: 94
+     * https://leetcode.com/problems/binary-tree-inorder-traversal
+     * Given the root of a binary tree, return the inorder traversal of its nodes' values.
+     *
+     * Example 1:
+     *
+     * Input: root = [1,null,2,3]
+     * Output: [1,3,2]
+     *
+     * Approach: In a BST, inorder traversal visits nodes in sorted ascending order.
+     * Tags: Tree
+     * Tags: DFS
      */
     public List<Integer> inorder() {
         List<Integer> result = new ArrayList<>();
@@ -152,8 +162,18 @@ public class BinarySearchTree {
     }
 
     /**
-     * Preorder traversal visits nodes in root, left, right order.
-     * This is useful when you want to copy or serialize the tree structure.
+     * LC: 144
+     * https://leetcode.com/problems/binary-tree-preorder-traversal
+     * Given the root of a binary tree, return the preorder traversal of its nodes' values.
+     *
+     * Example 1:
+     *
+     * Input: root = [1,null,2,3]
+     * Output: [1,2,3]
+     *
+     * Approach: Visit the current node first, then the left subtree, then the right subtree.
+     * Tags: Tree
+     * Tags: DFS
      */
     public List<Integer> preorder() {
         List<Integer> result = new ArrayList<>();
@@ -171,8 +191,18 @@ public class BinarySearchTree {
     }
 
     /**
-     * Postorder traversal visits nodes in left, right, root order.
-     * This is commonly used when processing or deleting subtrees bottom-up.
+     * LC: 145
+     * https://leetcode.com/problems/binary-tree-postorder-traversal
+     * Given the root of a binary tree, return the postorder traversal of its nodes' values.
+     *
+     * Example 1:
+     *
+     * Input: root = [1,null,2,3]
+     * Output: [3,2,1]
+     *
+     * Approach: Visit the left subtree, then the right subtree, then the current node.
+     * Tags: Tree
+     * Tags: DFS
      */
     public List<Integer> postorder() {
         List<Integer> result = new ArrayList<>();
@@ -190,7 +220,7 @@ public class BinarySearchTree {
     }
 
     /**
-     * Level-order traversal visits nodes breadth-first, one level at a time.
+     * Level-order traversal visits nodes breadth-first, one node at a time.
      * A queue is used to process nodes from top to bottom, left to right.
      */
     public List<Integer> levelOrder() {
