@@ -1,23 +1,29 @@
-﻿# DSA - Java
+# DSA
 
-Personal DSA learning and problem practice repo.
+Personal DSA learning and problem practice repo with Java solutions, Python practice code, and pattern notes.
 
 ## Progress
 
-**Total problems solved**
-Java: 50
-Python: 19
-Build: Maven
+**Problem solutions**
+- Java: 67
+- Python LeetCode: 19
+
+**Build**
+- Java: Maven
 
 ## Structure
 
 ```text
 java/src/main/java/
-  basics/           Java fundamentals - arrays, strings, input
   common/           Shared models - ListNode, TreeNode, Node
-  algorithms/       Sorting algorithms with complexity notes
-  datastructures/   DS implementations - LinkedList, BinaryTree, Graph, HashMap
-  problems/         Solutions grouped by topic with searchable headers
+  problems/         LeetCode-style solutions grouped by topic
+docs/problems/      Problem index and pattern revision guides
+python/
+  basics/           Python fundamentals and input helpers
+  algorithms/       Sorting algorithm practice
+  common/           Shared Python models
+  datastructures/   Python data structure implementations
+  leetcode/         Python LeetCode solutions grouped by topic
 ```
 
 ## Platform aliases
@@ -41,6 +47,10 @@ Open `docs/problems/patterns/` for revision guides:
 - `docs/problems/patterns/greedy_readme.md`
 - `docs/problems/patterns/two_pointer_readme.md`
 - `docs/problems/patterns/bfs_dfs_readme.md`
+- `docs/problems/patterns/sliding_window_readme.md`
+- `docs/problems/patterns/dynamic_programming_readme.md`
+
+For a complete topic and tag index, open `docs/problems/README.md`.
 
 ### By tag
 Use Find in Files and search for the tag string:
@@ -51,6 +61,10 @@ Use Find in Files and search for the tag string:
 | `Tags: TwoPointer` | two-pointer problems |
 | `Tags: BFS` | breadth-first search problems |
 | `Tags: DFS` | depth-first search problems |
+| `Tags: SlidingWindow` | sliding window problems |
+| `Tags: Sliding Window` | sliding window problems |
+| `Tags: BinarySearch` | binary search problems |
+| `Tags: DynamicProgramming` | dynamic programming problems |
 | `Tags: Array` | array problems |
 | `Tags: LinkedList` | linked list problems |
 | `Tags: Tree` | tree problems |
@@ -63,6 +77,8 @@ Problem files use comment metadata like:
 /**
  * LC: 94
  * https://leetcode.com/problems/binary-tree-inorder-traversal
+ * Example: ...
+ * Approach: ...
  * Tags: Tree
  * Tags: DFS
  */

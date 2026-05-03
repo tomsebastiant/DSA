@@ -27,8 +27,10 @@ Search for `Tags: Greedy`.
 | Jump Game | `M_JumpGame` | track the farthest reachable index |
 | Jump Game II | `M_JumpGame2` | track the current jump boundary |
 | Hand of Straights | `M_HandOfStraights` | always build from the smallest available card |
+| Container With Most Water | `M_ContainerWithMostWater` | move the shorter wall inward and keep the best area |
 | Is Subsequence | `E_IsSubsequence` | two pointers, advance on matches only |
 
 ## Notes
 
 Some array problems also mix in sorting or two pointer technique. The greedy tag is the main revision hook.
+`Container With Most Water` is a good example of a problem that appears in both the greedy and two pointer buckets.

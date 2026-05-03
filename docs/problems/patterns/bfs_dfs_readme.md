@@ -23,6 +23,8 @@ Search for `Tags: BFS` or `Tags: DFS`.
 | Problem | File | Key idea |
 |---------|------|----------|
 | Keys and Rooms | `M_KeysAndRooms` | walk the reachable rooms with a queue or stack-like traversal |
+| Course Schedule | `M_CoursesCanFinish` | use indegrees and Kahn's algorithm to detect cycles |
+| Rotting Oranges | `M_RottingOranges` | spread rot one minute at a time with multi-source BFS |
 | Find Leftmost Value in Tree | `M_FindLeftmostValueofTree` | record the first node seen at each level |
 | Sum of Left Leaves | `E_SumOfLeftLeaves` | carry whether the current node is a left child |
 | Completeness of Binary Tree | `M_CompletenessOfBinaryTree` | stop when a null appears before a non-null |
@@ -46,3 +48,4 @@ Search for `Tags: BFS` or `Tags: DFS`.
 ## Notes
 
 This section covers both graph and tree traversal because the same search patterns show up in both places.
+Topological sort problems are included here when the implementation uses a BFS queue and indegree counts.

@@ -6,11 +6,11 @@ Java 21 solutions grouped by topic, with search-friendly headers on each file.
 
 | Folder | Problems | Notes |
 |--------|----------|-------|
-| `array/` | 18 | greedy, two pointer, intervals, and array sweep patterns |
-| `linkedlist/` | 8 | pointer manipulation and list rewiring |
-| `tree/` | 13 | recursion, BFS, DFS, and tree construction |
-| `graph/` | 2 | graph traversal and room/island style search |
-| `string/` | 1 | string matching and subsequence checks |
+| `array/` | 28 | greedy, two pointer, intervals, sliding window, and array sweep patterns |
+| `linkedlist/` | 12 | pointer manipulation and list rewiring |
+| `tree/` | 19 | recursion, BFS, DFS, and tree construction |
+| `graph/` | 4 | graph traversal, topological sort, and room/island style search |
+| `string/` | 3 | string matching, subsequence checks, and sliding window |
 
 ## Browse by pattern
 
@@ -19,6 +19,8 @@ Java 21 solutions grouped by topic, with search-friendly headers on each file.
 | Greedy | `docs/problems/patterns/greedy_readme.md` |
 | Two pointer | `docs/problems/patterns/two_pointer_readme.md` |
 | BFS / DFS | `docs/problems/patterns/bfs_dfs_readme.md` |
+| Sliding Window | `docs/problems/patterns/sliding_window_readme.md` |
+| Dynamic Programming | `docs/problems/patterns/dynamic_programming_readme.md` |
 
 ## Search by tag
 
@@ -30,6 +32,9 @@ Use Find in Files in VS Code or IntelliJ and search for the tag string:
 | `Tags: TwoPointer` | two pointer problems |
 | `Tags: BFS` | breadth-first search problems |
 | `Tags: DFS` | depth-first search problems |
+| `Tags: SlidingWindow` | sliding window problems |
+| `Tags: Sliding Window` | sliding window problems |
+| `Tags: DynamicProgramming` | dynamic programming problems |
 | `Tags: Array` | array category |
 | `Tags: LinkedList` | linked list category |
 | `Tags: Tree` | tree category |
@@ -44,4 +49,6 @@ Tags: Array
 Tags: TwoPointer
 Tags: Tree
 Tags: DFS
+Tags: SlidingWindow
+Tags: DynamicProgramming
 ```
