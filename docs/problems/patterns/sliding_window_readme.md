@@ -12,8 +12,8 @@ Use sliding window when you need to process a contiguous subarray or substring w
 - Monotonic deque / queue for window maximums
 
 ## IntelliJ or VS Code search
-Search for `Tags: SlidingWindow` or `Tags: Sliding Window`.
-For window-maximum problems, also search for `Tags: Monotonic Queue` or `Tags: Deque`.
+Search for `Tags: SlidingWindow`.
+For window-maximum problems, also search for `Tags: Deque`.
 
 ## Common sliding window problems in this repo
 

@@ -1,4 +1,4 @@
-package problems.array;
+package problems.dynamicprogramming;
 
 /**
  * LC: 1143

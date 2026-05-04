@@ -6,11 +6,13 @@ Java 21 solutions grouped by topic, with search-friendly headers on each file.
 
 | Folder | Problems | Notes |
 |--------|----------|-------|
-| `array/` | 28 | greedy, two pointer, intervals, sliding window, and array sweep patterns |
-| `linkedlist/` | 12 | pointer manipulation and list rewiring |
+| `array/` | 30 | greedy, two pointer, intervals, sliding window, and array sweep patterns |
+| `linkedlist/` | 13 | pointer manipulation, list rewiring, and design (LRU cache, min stack) |
 | `tree/` | 19 | recursion, BFS, DFS, and tree construction |
-| `graph/` | 4 | graph traversal, topological sort, and room/island style search |
-| `string/` | 3 | string matching, subsequence checks, and sliding window |
+| `graph/` | 5 | graph traversal, topological sort, and room/island style search |
+| `string/` | 4 | string matching, subsequence checks, and sliding window |
+| `dynamicprogramming/` | 4 | 1D DP, 2D DP, and knapsack-style problems |
+| `priorityqueue/` | 2 | heap-based selection and task scheduling |
 
 ## Browse by pattern
 
@@ -33,15 +35,19 @@ Use Find in Files in VS Code or IntelliJ and search for the tag string:
 | `Tags: BFS` | breadth-first search problems |
 | `Tags: DFS` | depth-first search problems |
 | `Tags: SlidingWindow` | sliding window problems |
-| `Tags: Sliding Window` | sliding window problems |
+| `Tags: BinarySearch` | binary search problems |
 | `Tags: DynamicProgramming` | dynamic programming problems |
 | `Tags: Array` | array category |
 | `Tags: LinkedList` | linked list category |
 | `Tags: Tree` | tree category |
+| `Tags: Graph` | graph problems |
+| `Tags: Stack` | stack-based problems |
+| `Tags: PrefixSum` | prefix sum problems |
+| `Tags: TopologicalSort` | topological sort problems |
 
 ## Tag convention
 
-Tags use plain words, one tag per line:
+Tags use plain camelCase words, one tag per line:
 
 ```java
 Tags: Greedy
@@ -49,6 +55,15 @@ Tags: Array
 Tags: TwoPointer
 Tags: Tree
 Tags: DFS
+Tags: BFS
 Tags: SlidingWindow
+Tags: BinarySearch
 Tags: DynamicProgramming
+Tags: Graph
+Tags: Stack
+Tags: PrefixSum
+Tags: HashTable
+Tags: HashSet
+Tags: Design
+Tags: TopologicalSort
 ```

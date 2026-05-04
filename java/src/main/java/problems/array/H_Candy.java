@@ -4,34 +4,32 @@ import java.util.Arrays;
 
 /**
  * LC: 135
- https://leetcode.com/problems/candy
- There are n children standing in a line. Each child is assigned a rating value given in the integer array ratings.
-
- You are giving candies to these children subjected to the following requirements:
-
- Each child must have at least one candy.
- Children with a higher rating get more candies than their neighbors.
- Return the minimum number of candies you need to have to distribute the candies to the children.
-
-
-
- Example 1:
-
- Input: ratings = [1,0,2]
- Output: 5
- Explanation: You can allocate to the first, second and third child with 2, 1, 2 candies respectively.
- Example 2:
-
- Input: ratings = [1,2,2]
- Output: 4
- Explanation: You can allocate to the first, second and third child with 1, 2, 1 candies respectively.
- The third child gets 1 candy because it satisfies the above two conditions.
-
- Approach: First give everyone 1 cnady each;
- Traverse left to right, giving candies according to the rating of the left neighbour
- Traverse right to left, give candies according to the ratings of the right neighbour
-
- Tags: Greedy
+ * https://leetcode.com/problems/candy
+ * There are n children standing in a line. Each child is assigned a rating value given in the integer array ratings.
+ *
+ * You are giving candies to these children subjected to the following requirements:
+ * - Each child must have at least one candy.
+ * - Children with a higher rating get more candies than their neighbors.
+ * Return the minimum number of candies you need to have to distribute the candies to the children.
+ *
+ * Example 1:
+ *
+ * Input: ratings = [1,0,2]
+ * Output: 5
+ * Explanation: You can allocate to the first, second and third child with 2, 1, 2 candies respectively.
+ *
+ * Example 2:
+ *
+ * Input: ratings = [1,2,2]
+ * Output: 4
+ * Explanation: You can allocate to the first, second and third child with 1, 2, 1 candies respectively.
+ * The third child gets 1 candy because it satisfies the above two conditions.
+ *
+ * Approach: Give everyone 1 candy each. Traverse left to right, increasing a child's count when
+ * their rating exceeds the left neighbour's. Then traverse right to left, taking the maximum of
+ * the current count and one more than the right neighbour's count wherever the rating is higher.
+ * Tags: Greedy
+ * Tags: Array
  */
 
 public class H_Candy {

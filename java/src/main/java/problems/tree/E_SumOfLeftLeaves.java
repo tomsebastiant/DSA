@@ -5,15 +5,15 @@ import java.util.Stack;
 
 /**
  * LC: 404
- Tags: Tree
- Tags: BFS
- https://leetcode.com/problems/sum-of-left-leaves
- Given the root of a binary tree, return the sum of all left leaves.
-
- A leaf is a node with no children. A left leaf is a leaf that is the left child of another node.
-
- Approach: We traverse the tree using a stack and when we reach a left leaf we add it to the sum
-
+ * https://leetcode.com/problems/sum-of-left-leaves
+ * Given the root of a binary tree, return the sum of all left leaves.
+ *
+ * A leaf is a node with no children. A left leaf is a leaf that is the left child of another node.
+ *
+ * Approach: Traverse the tree iteratively using a stack. When the top of the stack has a left
+ * child that is a leaf, accumulate its value; otherwise push it for further traversal.
+ * Tags: Tree
+ * Tags: DFS
  */
 public class E_SumOfLeftLeaves {
     public int sumOfLeftLeaves(TreeNode root) {

@@ -5,7 +5,7 @@ Personal DSA learning and problem practice repo with Java solutions, Python prac
 ## Progress
 
 **Problem solutions**
-- Java: 67
+- Java: 77
 - Python LeetCode: 19
 
 **Build**
@@ -15,15 +15,22 @@ Personal DSA learning and problem practice repo with Java solutions, Python prac
 
 ```text
 java/src/main/java/
-  common/           Shared models - ListNode, TreeNode, Node
-  problems/         LeetCode-style solutions grouped by topic
-docs/problems/      Problem index and pattern revision guides
+  common/                    Shared models - ListNode, TreeNode, Node
+  problems/
+    array/                   Greedy, two pointer, intervals, sliding window
+    linkedlist/              Pointer manipulation, list rewiring, design
+    tree/                    Recursion, BFS, DFS, tree construction
+    graph/                   Graph traversal and topological sort
+    string/                  String matching, subsequences, sliding window
+    dynamicprogramming/      1D DP, 2D DP, knapsack
+    priorityqueue/           Heap-based selection and scheduling
+docs/problems/               Problem index and pattern revision guides
 python/
-  basics/           Python fundamentals and input helpers
-  algorithms/       Sorting algorithm practice
-  common/           Shared Python models
-  datastructures/   Python data structure implementations
-  leetcode/         Python LeetCode solutions grouped by topic
+  basics/                    Python fundamentals and input helpers
+  algorithms/                Sorting algorithm practice
+  common/                    Shared Python models
+  datastructures/            Python data structure implementations
+  leetcode/                  Python LeetCode solutions grouped by topic
 ```
 
 ## Platform aliases
@@ -62,12 +69,15 @@ Use Find in Files and search for the tag string:
 | `Tags: BFS` | breadth-first search problems |
 | `Tags: DFS` | depth-first search problems |
 | `Tags: SlidingWindow` | sliding window problems |
-| `Tags: Sliding Window` | sliding window problems |
 | `Tags: BinarySearch` | binary search problems |
 | `Tags: DynamicProgramming` | dynamic programming problems |
 | `Tags: Array` | array problems |
 | `Tags: LinkedList` | linked list problems |
 | `Tags: Tree` | tree problems |
+| `Tags: Graph` | graph problems |
+| `Tags: Stack` | stack-based problems |
+| `Tags: PrefixSum` | prefix sum problems |
+| `Tags: TopologicalSort` | topological sort problems |
 
 ## Problem headers
 

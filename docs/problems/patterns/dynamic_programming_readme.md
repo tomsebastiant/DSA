@@ -21,6 +21,9 @@ Search for `Tags: DynamicProgramming`.
 |---------|------|---------|----------|
 | Longest Common Subsequence | `M_LongestCommonSubsequence` | 2D DP | build the answer from prefixes of both strings |
 | Maximum Subarray | `M_MaxSubArray` | 1D DP | keep the best subarray ending at the current index |
+| Coin Change | `M_CoinChange` | 1D DP | fewest coins: for each amount try every coin denomination |
+| Word Break | `M_WordBreak` | 1D DP (Boolean) | dp[i] is true if the prefix of length i can be segmented |
+| Partition Equal Subset Sum | `M_ArrayPartitionEqual` | Knapsack | can we pick a subset summing to totalSum / 2 |
 
 ## Notes
 

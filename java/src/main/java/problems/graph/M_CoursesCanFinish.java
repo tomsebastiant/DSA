@@ -32,7 +32,7 @@ import java.util.List;
  Otherwise, a cycle exists, so it is impossible to complete all courses.
 
  Tags: Graph
- Tags: Topological Sort
+ Tags: TopologicalSort
  Tags: BFS
  */
 public class M_CoursesCanFinish {

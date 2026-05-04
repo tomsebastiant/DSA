@@ -26,7 +26,6 @@ Search for `Tags: BFS` or `Tags: DFS`.
 | Course Schedule | `M_CoursesCanFinish` | use indegrees and Kahn's algorithm to detect cycles |
 | Rotting Oranges | `M_RottingOranges` | spread rot one minute at a time with multi-source BFS |
 | Find Leftmost Value in Tree | `M_FindLeftmostValueofTree` | record the first node seen at each level |
-| Sum of Left Leaves | `E_SumOfLeftLeaves` | carry whether the current node is a left child |
 | Completeness of Binary Tree | `M_CompletenessOfBinaryTree` | stop when a null appears before a non-null |
 
 ## DFS problems in this repo
@@ -41,6 +40,7 @@ Search for `Tags: BFS` or `Tags: DFS`.
 | Largest Value in Each Tree Row | `M_LargestValueInTreeRow` | track a maximum for each level |
 | Maximum Width of Binary Tree | `M_MaxWidthOfBinaryTree` | keep positional indices while traversing |
 | Binary Tree Pruning | `M_BinaryTreePruning` | prune from the leaves upward |
+| Sum of Left Leaves | `E_SumOfLeftLeaves` | traverse with a stack; add the value when the top node has a left leaf |
 | Flatten Binary Tree to Linked List | `M_FlattenBinaryTree` | preorder-style rewiring |
 | Build Tree from Inorder and Preorder | `M_BuildTreeFromInorderPreorder` | root comes from preorder, split inorder |
 | Distribute Coins in Binary Tree | `M_DistributeCoinsBinaryTree` | return the excess coins up the tree |
