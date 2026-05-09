@@ -22,6 +22,7 @@ Search for `Tags: BFS` or `Tags: DFS`.
 
 | Problem | File | Key idea |
 |---------|------|----------|
+| Word Ladder | `H_WordLadder` | try every one-letter substitution at each step; BFS guarantees the shortest transformation sequence |
 | Keys and Rooms | `M_KeysAndRooms` | walk the reachable rooms with a queue or stack-like traversal |
 | Course Schedule | `M_CoursesCanFinish` | use indegrees and Kahn's algorithm to detect cycles |
 | Rotting Oranges | `M_RottingOranges` | spread rot one minute at a time with multi-source BFS |

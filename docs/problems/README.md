@@ -9,7 +9,7 @@ Java 21 solutions grouped by topic, with search-friendly headers on each file.
 | `array/` | 30 | greedy, two pointer, intervals, sliding window, and array sweep patterns |
 | `linkedlist/` | 13 | pointer manipulation, list rewiring, and design (LRU cache, min stack) |
 | `tree/` | 19 | recursion, BFS, DFS, and tree construction |
-| `graph/` | 5 | graph traversal, topological sort, and room/island style search |
+| `graph/` | 6 | graph traversal, topological sort, and room/island style search |
 | `string/` | 4 | string matching, subsequence checks, and sliding window |
 | `dynamicprogramming/` | 4 | 1D DP, 2D DP, and knapsack-style problems |
 | `priorityqueue/` | 2 | heap-based selection and task scheduling |
