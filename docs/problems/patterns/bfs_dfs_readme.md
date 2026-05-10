@@ -28,6 +28,7 @@ Search for `Tags: BFS` or `Tags: DFS`.
 | Rotting Oranges | `M_RottingOranges` | spread rot one minute at a time with multi-source BFS |
 | Find Leftmost Value in Tree | `M_FindLeftmostValueofTree` | record the first node seen at each level |
 | Completeness of Binary Tree | `M_CompletenessOfBinaryTree` | stop when a null appears before a non-null |
+| Course Schedule II | `M_CourseSchedule2` | Kahn's topological sort; collect a valid ordering and detect cycles via output size |
 
 ## DFS problems in this repo
 
@@ -45,6 +46,14 @@ Search for `Tags: BFS` or `Tags: DFS`.
 | Flatten Binary Tree to Linked List | `M_FlattenBinaryTree` | preorder-style rewiring |
 | Build Tree from Inorder and Preorder | `M_BuildTreeFromInorderPreorder` | root comes from preorder, split inorder |
 | Distribute Coins in Binary Tree | `M_DistributeCoinsBinaryTree` | return the excess coins up the tree |
+| Serialize and Deserialize Binary Tree | `H_TreeSerializeDeserialize` | preorder DFS with null sentinels; shared queue in deserialization restores structure |
+| Clone Graph | `M_CloneGraph` | DFS with a hash map to track already-cloned nodes and avoid revisiting |
+| Kth Smallest Element in BST | `M_KthSmallestBST` | inorder traversal visits values in sorted order; stop at the k-th node |
+| Validate Binary Search Tree | `E_ValidateBinarySearchTree` | DFS passing valid min/max bounds down to each node |
+| Range Sum of BST | `E_RangeSumOfBST` | DFS pruning branches whose values fall outside the given range |
+| Path Sum | `E_PathSum` | DFS subtracting the node value; return true when a leaf with zero remainder is reached |
+| Maximum Depth of Binary Tree | `E_MaxDepthOfBinaryTree` | return 1 + max of left and right recursive depths |
+| Symmetric Tree | `E_SymmetricTree` | recursively check that left and right subtrees are mirror images |
 
 ## Notes
 

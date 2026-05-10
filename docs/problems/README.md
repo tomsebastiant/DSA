@@ -6,13 +6,14 @@ Java 21 solutions grouped by topic, with search-friendly headers on each file.
 
 | Folder | Problems | Notes |
 |--------|----------|-------|
-| `array/` | 30 | greedy, two pointer, intervals, sliding window, and array sweep patterns |
+| `array/` | 31 | greedy, two pointer, intervals, sliding window, and array sweep patterns |
 | `linkedlist/` | 13 | pointer manipulation, list rewiring, and design (LRU cache, min stack) |
-| `tree/` | 19 | recursion, BFS, DFS, and tree construction |
-| `graph/` | 6 | graph traversal, topological sort, and room/island style search |
-| `string/` | 4 | string matching, subsequence checks, and sliding window |
-| `dynamicprogramming/` | 4 | 1D DP, 2D DP, and knapsack-style problems |
-| `priorityqueue/` | 2 | heap-based selection and task scheduling |
+| `tree/` | 20 | recursion, BFS, DFS, and tree construction |
+| `graph/` | 9 | graph traversal, topological sort, union-find, and shortest path |
+| `string/` | 7 | string matching, subsequence checks, sliding window, and trie |
+| `dynamicprogramming/` | 6 | 1D DP, 2D DP, knapsack-style, and edit distance problems |
+| `priorityqueue/` | 3 | heap-based selection, task scheduling, and median stream |
+| `design/` | 1 | system design problems (Twitter feed, k-way merge) |
 
 ## Browse by pattern
 

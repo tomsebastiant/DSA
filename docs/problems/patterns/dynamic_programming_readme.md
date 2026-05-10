@@ -24,6 +24,8 @@ Search for `Tags: DynamicProgramming`.
 | Coin Change | `M_CoinChange` | 1D DP | fewest coins: for each amount try every coin denomination |
 | Word Break | `M_WordBreak` | 1D DP (Boolean) | dp[i] is true if the prefix of length i can be segmented |
 | Partition Equal Subset Sum | `M_ArrayPartitionEqual` | Knapsack | can we pick a subset summing to totalSum / 2 |
+| Longest Increasing Subsequence | `M_LengthOfLIS` | 1D DP | dp[i] is the LIS length ending at i; scan all j < i and extend when nums[j] < nums[i] |
+| Edit Distance | `M_EditDistance` | 2D DP | matching characters carry the diagonal cost; mismatches take 1 + min of replace/delete/insert |
 
 ## Notes
 
