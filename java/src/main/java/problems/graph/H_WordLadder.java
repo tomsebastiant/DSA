@@ -52,17 +52,22 @@ import java.util.Set;
 public class H_WordLadder {
         public int ladderLength(String beginWord, String endWord, List<String> wordList) {
         Set<String> set = new HashSet<>(wordList);
+
         // If endWord isn't reachable at all, no transformation sequence can exist.
         if(!wordList.contains(endWord)) return 0;
+
         Queue<String> queue = new ArrayDeque<>();
         queue.offer(beginWord);
         int steps=1;
+
         while(!queue.isEmpty()){
             // Snapshot the level size so we increment steps once per BFS depth, not per word.
             int size = queue.size();
+
             for(int i=0;i<size;i++){
                 char[] currArray = queue.poll().toCharArray();
                 for(int j=0;j<currArray.length;j++){
+                    
                     // Save the original character so we can restore it after trying all substitutions.
                     char orig=currArray[j];
                     for(char k='a';k<='z';k++){

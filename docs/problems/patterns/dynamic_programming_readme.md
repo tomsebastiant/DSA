@@ -19,6 +19,9 @@ Search for `Tags: DynamicProgramming`.
 
 | Problem | File | Variant | Key idea |
 |---------|------|---------|----------|
+| Climb Stairs | `E_ClimbStairs` | 1D DP | Fibonacci recurrence — ways(n) = ways(n-1) + ways(n-2); roll two variables |
+| Unique Paths | `M_UniquePaths` | 2D DP | seed edges with 1; each cell = above + left |
+| Minimum Path Sum | `M_MinPathSum` | 2D DP | in-place; each cell = value + min(above, left) |
 | Longest Common Subsequence | `M_LongestCommonSubsequence` | 2D DP | build the answer from prefixes of both strings |
 | Maximum Subarray | `M_MaxSubArray` | 1D DP | keep the best subarray ending at the current index |
 | Coin Change | `M_CoinChange` | 1D DP | fewest coins: for each amount try every coin denomination |

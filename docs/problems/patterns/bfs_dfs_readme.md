@@ -48,6 +48,9 @@ Search for `Tags: BFS` or `Tags: DFS`.
 | Distribute Coins in Binary Tree | `M_DistributeCoinsBinaryTree` | return the excess coins up the tree |
 | Serialize and Deserialize Binary Tree | `H_TreeSerializeDeserialize` | preorder DFS with null sentinels; shared queue in deserialization restores structure |
 | Clone Graph | `M_CloneGraph` | DFS with a hash map to track already-cloned nodes and avoid revisiting |
+| Max Area of Island | `M_MaxIslandArea` | sink each visited cell to 0 and accumulate area; track the max across all islands |
+| Lowest Common Ancestor | `M_LowestCommonAncestor` | post-order DFS; current node is LCA when both subtrees return non-null |
+| Letter Combinations of a Phone Number | `M_LetterCombination` | backtracking DFS; pick one letter per digit, recurse, then undo the choice |
 | Kth Smallest Element in BST | `M_KthSmallestBST` | inorder traversal visits values in sorted order; stop at the k-th node |
 | Validate Binary Search Tree | `E_ValidateBinarySearchTree` | DFS passing valid min/max bounds down to each node |
 | Range Sum of BST | `E_RangeSumOfBST` | DFS pruning branches whose values fall outside the given range |

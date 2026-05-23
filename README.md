@@ -5,7 +5,7 @@ Personal DSA learning and problem practice repo with Java solutions, Python prac
 ## Progress
 
 **Problem solutions**
-- Java: 90
+- Java: 107
 - Python LeetCode: 19
 
 **Build**
@@ -17,13 +17,20 @@ Personal DSA learning and problem practice repo with Java solutions, Python prac
 java/src/main/java/
   common/                    Shared models - ListNode, TreeNode, Node
   problems/
-    array/                   Greedy, two pointer, intervals, sliding window
-    linkedlist/              Pointer manipulation, list rewiring, design
-    tree/                    Recursion, BFS, DFS, tree construction
-    graph/                   Graph traversal and topological sort
-    string/                  String matching, subsequences, sliding window
-    dynamicprogramming/      1D DP, 2D DP, knapsack
+    array/                   Array sweep, prefix sum, and hash-based search
+    twopointer/              Left/right and fixed-plus-moving pointer problems
+    slidingwindow/           Fixed and variable size window problems
+    binarysearch/            Binary search on sorted arrays and on the answer space
+    greedy/                  Locally optimal choices for intervals, jumps, and scheduling
+    stack/                   Monotonic stack and stack-based evaluation
+    backtracking/            Exhaustive DFS with undo
+    linkedlist/              Pointer manipulation and list rewiring
+    tree/                    Recursion, BFS, DFS, and tree construction
+    graph/                   Graph traversal, topological sort, and shortest path
+    string/                  String matching, subsequences, and sliding window
+    dynamicprogramming/      1D DP, 2D DP, knapsack, and sequence alignment
     priorityqueue/           Heap-based selection and scheduling
+    design/                  System design problems
 docs/problems/               Problem index and pattern revision guides
 python/
   basics/                    Python fundamentals and input helpers

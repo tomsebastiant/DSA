@@ -24,6 +24,7 @@ For window-maximum problems, also search for `Tags: Deque`.
 | Minimum Size Subarray Sum | `M_MinSubArrayLen` | variable size | expand until sum reaches the target, then shrink to minimize length |
 | Fruit Into Baskets | `M_TotalFruit` | variable size | keep at most 2 fruit types in the window using a frequency map |
 | Longest Substring Without Repeating Characters | `M_lengthOfLongestSubstring` | variable size | use a set and shrink until the window is unique again |
+| Find All Anagrams in a String | `M_FindAnagrams` | fixed size | slide a window of p.length(); compare 26-element frequency arrays each step |
 | Minimum Window Substring | `H_MinWindowSubstring` | variable size | expand right to satisfy all character counts, shrink left to minimise; required counter tracks fully-satisfied types |
 
 ## Notes

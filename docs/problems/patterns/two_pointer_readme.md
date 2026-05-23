@@ -21,6 +21,7 @@ Search for `Tags: TwoPointer`.
 | Two Sum II | `M_TwoSum2` | left/right | move the ends based on the current sum |
 | Container With Most Water | `M_ContainerWithMostWater` | left/right | move the shorter wall inward |
 | 3Sum Closest | `M_3SumClosest` | fixed + left/right | fix one index, sweep the rest |
+| 3Sum | `M_3Sum` | fixed + left/right | sort, fix one index, two-pointer the rest; skip duplicates at both levels |
 | Trapping Rain Water | `H_TrappingRainWater` | left/right | keep track of the best wall seen from both sides |
 
 ## Related list techniques
