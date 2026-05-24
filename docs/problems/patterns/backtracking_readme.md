@@ -44,3 +44,8 @@ void backtrack(state, choices) {
 
 The undo step must mirror the apply step exactly — if you appended a character, delete it; if you swapped elements, swap them back.
 Pruning (skipping branches that cannot lead to a valid solution) is what makes backtracking practical for large inputs.
+
+## Loop start: permutations vs combinations
+
+- **Permutations** → loop from `0` every time (order matters — `[2,3]` and `[3,2]` are distinct)
+- **Combinations** → loop from `start` every time (order doesn't matter — `[2,3]` and `[3,2]` are the same)
