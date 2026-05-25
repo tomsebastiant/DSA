@@ -31,6 +31,7 @@ Search for `Tags: Greedy`.
 | Is Subsequence | `E_IsSubsequence` | two pointers, advance on matches only |
 | Task Scheduler | `M_TaskScheduler` | frequency-based bucket formula; answer is max of skeleton size and total task count |
 | Split Array Largest Sum | `H_CanSplitMinSum` | binary search on the feasible answer range; greedy check counts minimum splits for a given limit |
+| Reorganize String | `M_ReorganizeString` | count character frequencies and use a max-heap to always place the two most frequent remaining characters side by side |
 
 ## Notes
 

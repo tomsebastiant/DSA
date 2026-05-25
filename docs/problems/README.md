@@ -7,18 +7,18 @@ Java 21 solutions grouped by topic, with search-friendly headers on each file.
 | Folder | Problems | Notes |
 |--------|----------|-------|
 | `array/` | 12 | array sweep, prefix sum, and hash-based search |
-| `twopointer/` | 5 | left/right scan and fixed-plus-moving pointer problems |
+| `twopointer/` | 6 | left/right scan and fixed-plus-moving pointer problems |
 | `slidingwindow/` | 5 | fixed and variable size window problems |
 | `binarysearch/` | 5 | binary search on sorted arrays and on the answer space |
 | `greedy/` | 11 | locally optimal choices for intervals, jumps, and scheduling |
-| `stack/` | 3 | monotonic stack and stack-based evaluation |
-| `backtracking/` | 1 | exhaustive DFS with undo |
+| `stack/` | 4 | monotonic stack and stack-based evaluation |
+| `backtracking/` | 2 | exhaustive DFS with undo |
 | `linkedlist/` | 11 | pointer manipulation and list rewiring |
 | `tree/` | 21 | recursion, BFS, DFS, and tree construction |
-| `graph/` | 10 | graph traversal, topological sort, union-find, and shortest path |
+| `graph/` | 11 | graph traversal, topological sort, union-find, and shortest path |
 | `string/` | 7 | string matching, subsequence checks, and sliding window |
-| `dynamicprogramming/` | 9 | 1D DP, 2D DP, knapsack-style, and edit distance problems |
-| `priorityqueue/` | 4 | heap-based selection, task scheduling, and median stream |
+| `dynamicprogramming/` | 10 | 1D DP, 2D DP, knapsack-style, and edit distance problems |
+| `priorityqueue/` | 5 | heap-based selection, task scheduling, and median stream |
 | `design/` | 3 | system design problems (Twitter feed, LRU cache, trie) |
 
 ## Browse by pattern

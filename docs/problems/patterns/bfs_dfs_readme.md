@@ -57,6 +57,8 @@ Search for `Tags: BFS` or `Tags: DFS`.
 | Path Sum | `E_PathSum` | DFS subtracting the node value; return true when a leaf with zero remainder is reached |
 | Maximum Depth of Binary Tree | `E_MaxDepthOfBinaryTree` | return 1 + max of left and right recursive depths |
 | Symmetric Tree | `E_SymmetricTree` | recursively check that left and right subtrees are mirror images |
+| Surrounded Regions | `M_SurroundedRegions` | DFS from every border 'O' marks safe cells with a sentinel; a final pass flips remaining 'O's to 'X' and restores sentinels |
+| Combination Sum | `M_CombinationSum` | backtracking with a start index to build combinations; reuse allowed so the same candidate can be picked again |
 
 ## Notes
 

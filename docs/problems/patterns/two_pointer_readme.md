@@ -23,6 +23,7 @@ Search for `Tags: TwoPointer`.
 | 3Sum Closest | `M_3SumClosest` | fixed + left/right | fix one index, sweep the rest |
 | 3Sum | `M_3Sum` | fixed + left/right | sort, fix one index, two-pointer the rest; skip duplicates at both levels |
 | Trapping Rain Water | `H_TrappingRainWater` | left/right | keep track of the best wall seen from both sides |
+| 4Sum | `M_4Sum` | fixed + left/right | sort, fix two outer indices with nested loops, then two-pointer the remaining pair; skip duplicates at every level |
 
 ## Related list techniques
 

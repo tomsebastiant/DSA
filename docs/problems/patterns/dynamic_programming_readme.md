@@ -29,6 +29,7 @@ Search for `Tags: DynamicProgramming`.
 | Partition Equal Subset Sum | `M_ArrayPartitionEqual` | Knapsack | can we pick a subset summing to totalSum / 2 |
 | Longest Increasing Subsequence | `M_LengthOfLIS` | 1D DP | dp[i] is the LIS length ending at i; scan all j < i and extend when nums[j] < nums[i] |
 | Edit Distance | `M_EditDistance` | 2D DP | matching characters carry the diagonal cost; mismatches take 1 + min of replace/delete/insert |
+| House Robber | `M_HouseRobber` | 1D DP | 1D DP rolled into two variables; at each house pick the better of skip (keep prev) or rob (current + prev-prev) |
 
 ## Notes
 
