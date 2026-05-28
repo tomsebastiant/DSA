@@ -52,7 +52,7 @@ public class M_Twitter {
     // followMap: followerId -> set of followeeIds
     private Map<Integer,Set<Integer>> followMap = new HashMap<>();
 
-    public Twitter() {}
+    public M_Twitter() {}
 
     public void postTweet(int userId, int tweetId) {
         tweetMap.computeIfAbsent(userId, k -> new ArrayList<>())

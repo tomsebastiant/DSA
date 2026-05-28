@@ -35,7 +35,6 @@ public class M_MergeInterval {
         int[] curr = intervals[0];
         output.add(curr);
         for(int[] interval:intervals){
-            int curr_start = curr[0];
             int curr_end = curr[1];
             int next_start = interval[0];
             int next_end = interval[1];
