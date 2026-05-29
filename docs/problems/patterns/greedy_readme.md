@@ -32,6 +32,8 @@ Search for `Tags: Greedy`.
 | Task Scheduler | `M_TaskScheduler` | frequency-based bucket formula; answer is max of skeleton size and total task count |
 | Split Array Largest Sum | `H_CanSplitMinSum` | binary search on the feasible answer range; greedy check counts minimum splits for a given limit |
 | Reorganize String | `M_ReorganizeString` | count character frequencies and use a max-heap to always place the two most frequent remaining characters side by side |
+| Video Stitching | `M_VideoStitching` | sort clips by start; two-tier greedy loop extends the coverage frontier to the farthest clip reachable from the current boundary |
+| Minimum Number of Taps to Open to Water a Garden | `H_MinTaps` | convert each tap to its watering interval, then apply the same interval-cover greedy as Jump Game II; return -1 if no tap bridges a gap |
 
 ## Notes
 

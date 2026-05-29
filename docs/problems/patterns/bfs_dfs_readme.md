@@ -29,6 +29,7 @@ Search for `Tags: BFS` or `Tags: DFS`.
 | Find Leftmost Value in Tree | `M_FindLeftmostValueofTree` | record the first node seen at each level |
 | Completeness of Binary Tree | `M_CompletenessOfBinaryTree` | stop when a null appears before a non-null |
 | Course Schedule II | `M_CourseSchedule2` | Kahn's topological sort; collect a valid ordering and detect cycles via output size |
+| Shortest Path in Binary Matrix | `M_ShortedBinaryPathMatrix` | BFS from (0,0) in all 8 directions; mark cells visited in-place; first time (n-1,n-1) is reached is the shortest clear path |
 
 ## DFS problems in this repo
 

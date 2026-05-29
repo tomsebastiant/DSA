@@ -5,7 +5,7 @@ Personal DSA learning and problem practice repo with Java solutions, Python prac
 ## Progress
 
 **Problem solutions**
-- Java: 113
+- Java: 124
 - Python LeetCode: 19
 
 **Build**
@@ -31,6 +31,7 @@ java/src/main/java/
     dynamicprogramming/      1D DP, 2D DP, knapsack, and sequence alignment
     priorityqueue/           Heap-based selection and scheduling
     design/                  System design problems
+    concurrency/             Multi-thread coordination problems
 docs/problems/               Problem index and pattern revision guides
 python/
   basics/                    Python fundamentals and input helpers
@@ -63,6 +64,7 @@ Open `docs/problems/patterns/` for revision guides:
 - `docs/problems/patterns/bfs_dfs_readme.md`
 - `docs/problems/patterns/sliding_window_readme.md`
 - `docs/problems/patterns/dynamic_programming_readme.md`
+- `docs/problems/patterns/concurrency_readme.md`
 
 For a complete topic and tag index, open `docs/problems/README.md`.
 

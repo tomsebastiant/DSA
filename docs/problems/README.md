@@ -10,16 +10,17 @@ Java 21 solutions grouped by topic, with search-friendly headers on each file.
 | `twopointer/` | 6 | left/right scan and fixed-plus-moving pointer problems |
 | `slidingwindow/` | 5 | fixed and variable size window problems |
 | `binarysearch/` | 5 | binary search on sorted arrays and on the answer space |
-| `greedy/` | 11 | locally optimal choices for intervals, jumps, and scheduling |
+| `greedy/` | 13 | locally optimal choices for intervals, jumps, and scheduling |
 | `stack/` | 4 | monotonic stack and stack-based evaluation |
 | `backtracking/` | 2 | exhaustive DFS with undo |
 | `linkedlist/` | 11 | pointer manipulation and list rewiring |
 | `tree/` | 21 | recursion, BFS, DFS, and tree construction |
-| `graph/` | 11 | graph traversal, topological sort, union-find, and shortest path |
+| `graph/` | 12 | graph traversal, topological sort, union-find, and shortest path |
 | `string/` | 7 | string matching, subsequence checks, and sliding window |
 | `dynamicprogramming/` | 10 | 1D DP, 2D DP, knapsack-style, and edit distance problems |
 | `priorityqueue/` | 5 | heap-based selection, task scheduling, and median stream |
-| `design/` | 3 | system design problems (Twitter feed, LRU cache, trie) |
+| `design/` | 9 | system design problems (rate limiter, LRU cache, trie, counters) |
+| `concurrency/` | 2 | multi-thread coordination with semaphores |
 
 ## Browse by pattern
 
@@ -33,6 +34,7 @@ Java 21 solutions grouped by topic, with search-friendly headers on each file.
 | BFS / DFS | `docs/problems/patterns/bfs_dfs_readme.md` |
 | Dynamic Programming | `docs/problems/patterns/dynamic_programming_readme.md` |
 | Backtracking | `docs/problems/patterns/backtracking_readme.md` |
+| Concurrency | `docs/problems/patterns/concurrency_readme.md` |
 
 ## Search by tag
 
