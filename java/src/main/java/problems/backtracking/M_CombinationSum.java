@@ -38,7 +38,7 @@ public class M_CombinationSum {
 
     public void backtrack(int[] candidates, int remain, int start, List<Integer> curr,List<List<Integer>> result){
         if(remain==0){
-            result.add(new ArrayList(curr));
+            result.add(new ArrayList<>(curr));
             return;
         }
 

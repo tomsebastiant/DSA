@@ -41,7 +41,7 @@ package problems.design;
  *
  */
 public class M_CircularDeque {
-        int[] arr;
+    int[] arr;
     int head;
     int tail;
     int size;

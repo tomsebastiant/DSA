@@ -51,7 +51,6 @@ public class M_KokoCanEatBanana {
 
     public boolean canEat(int[] piles,int h,int k){
         int time=0;
-        int curr=0;
         for(int i=0;i<piles.length;i++){
             time=time+piles[i]/k;
             if(piles[i]%k!=0) time++;
