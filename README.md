@@ -5,7 +5,7 @@ Personal DSA learning and problem practice repo with Java solutions, Python prac
 ## Progress
 
 **Problem solutions**
-- Java: 124
+- Java: 140
 - Python LeetCode: 19
 
 **Build**

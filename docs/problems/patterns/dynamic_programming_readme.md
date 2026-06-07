@@ -30,6 +30,11 @@ Search for `Tags: DynamicProgramming`.
 | Longest Increasing Subsequence | `M_LengthOfLIS` | 1D DP | dp[i] is the LIS length ending at i; scan all j < i and extend when nums[j] < nums[i] |
 | Edit Distance | `M_EditDistance` | 2D DP | matching characters carry the diagonal cost; mismatches take 1 + min of replace/delete/insert |
 | House Robber | `M_HouseRobber` | 1D DP | 1D DP rolled into two variables; at each house pick the better of skip (keep prev) or rob (current + prev-prev) |
+| Target Sum | `M_TargetSum` | Knapsack | assign + or − to each number; equivalent to finding a subset summing to (total + target) / 2; backtracking DFS also included |
+| Longest Palindromic Substring | `M_LongestPalindrome` | Interval DP | primary solution uses expand-around-center O(n²); DP version fills dp[i][j] (is s[i..j] a palindrome) by window length |
+| Palindromic Substrings | `M_CountPalindrome` | Interval DP | count all palindromic substrings; same expand-around-center approach; DP version also included as comment |
+| Burst Balloons | `H_BurstBalloons` | Interval DP | dp[i][j] = max coins from the balloons between i and j; choose the last balloon to burst to remove dependency on already-burst neighbours |
+| Longest Palindromic Subsequence | `M_LongestPalindromeSubsequence` | Interval DP | dp[i][j] = LPS length of s[i..j]; fill by window length; extend by 2 when ends match, otherwise take the better single-end drop |
 
 ## Notes
 

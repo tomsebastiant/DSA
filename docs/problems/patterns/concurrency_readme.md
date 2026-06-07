@@ -27,10 +27,21 @@ Search for `Tags: Design` inside `problems/concurrency/`.
 
 | Problem | File | Threads | Key idea |
 |---------|------|---------|----------|
+| Print In Order | `E_PrintInOrder` | 3 | two semaphores in a linear chain; second() is gated by firstDone (starts at 0), third() is gated by secondDone (starts at 0); first() releases firstDone, second() releases secondDone |
 | Print FooBar Alternately | `M_FoobarAlternate` | 2 | two semaphores as a ping-pong token; fooSem starts at 1 so foo runs first, barSem starts at 0; each thread releases the other's semaphore after printing |
 | Print Zero Even Odd | `M_ZeroEvenOdd` | 3 | three semaphores; zero thread holds the token, prints 0, then routes to oddSem or evenSem based on iteration parity; receiving thread prints its number and returns the token to zeroSem |
+| Build H2O | `M_BuildH2O` | 3 | two semaphores control H quota (2 permits) and O quota (1 permit); a CyclicBarrier ensures all three threads rendezvous before any releases their semaphore, so water() is always called atomically by one complete molecule |
 
 ## Patterns
+
+### Linear chain (PrintInOrder)
+```
+firstDone(0)  secondDone(0)
+
+first:   run → release(firstDone)
+second:  acquire(firstDone)  → run → release(secondDone)
+third:   acquire(secondDone) → run
+```
 
 ### Two-thread ping-pong (FooBar)
 ```
@@ -48,6 +59,16 @@ zero:  acquire(zeroSem) → print 0 → release(oddSem or evenSem based on i%2)
 odd:   acquire(oddSem)  → print i → release(zeroSem)
 even:  acquire(evenSem) → print i → release(zeroSem)
 ```
+
+### CyclicBarrier rendezvous (BuildH2O)
+```
+hSem(2)  oSem(1)  barrier(parties=3)
+
+hydrogen: acquire(hSem) → barrier.await() → release(hSem)
+oxygen:   acquire(oSem) → barrier.await() → release(oSem)
+```
+All three threads block at the barrier. The last to arrive triggers the barrier action (calls water()),
+then all three resume and release their permits for the next molecule.
 
 ## Notes
 

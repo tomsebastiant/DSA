@@ -30,6 +30,8 @@ Search for `Tags: BFS` or `Tags: DFS`.
 | Completeness of Binary Tree | `M_CompletenessOfBinaryTree` | stop when a null appears before a non-null |
 | Course Schedule II | `M_CourseSchedule2` | Kahn's topological sort; collect a valid ordering and detect cycles via output size |
 | Shortest Path in Binary Matrix | `M_ShortedBinaryPathMatrix` | BFS from (0,0) in all 8 directions; mark cells visited in-place; first time (n-1,n-1) is reached is the shortest clear path |
+| Is Graph Bipartite? | `M_GraphBipartite` | BFS 2-coloring; assign alternating colors to neighbors; any same-color conflict means an odd cycle exists — not bipartite |
+| Alien Dictionary | `H_AlienDictionary` | build a directed char-dependency graph from adjacent word pairs; Kahn's BFS topological sort extracts the ordering; cycle → invalid |
 
 ## DFS problems in this repo
 
