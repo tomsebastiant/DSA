@@ -46,7 +46,6 @@ import java.util.Set;
  * longer word strictly precedes its own prefix, and (2) the BFS result is shorter than the
  * total character count, indicating a cycle.
  *
- * NOTE: Missing import java.util.LinkedList was added — without it the file does not compile.
  */
 public class H_AlienDictionary {
     

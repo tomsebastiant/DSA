@@ -6,7 +6,7 @@ Java 21 solutions grouped by topic, with search-friendly headers on each file.
 
 | Folder | Problems | Notes |
 |--------|----------|-------|
-| `array/` | 15 | array sweep, prefix sum, and hash-based search |
+| `array/` | 16 | array sweep, prefix sum, and hash-based search |
 | `twopointer/` | 6 | left/right scan and fixed-plus-moving pointer problems |
 | `slidingwindow/` | 5 | fixed and variable size window problems |
 | `binarysearch/` | 5 | binary search on sorted arrays and on the answer space |
@@ -16,7 +16,7 @@ Java 21 solutions grouped by topic, with search-friendly headers on each file.
 | `linkedlist/` | 11 | pointer manipulation and list rewiring |
 | `tree/` | 21 | recursion, BFS, DFS, and tree construction |
 | `graph/` | 16 | graph traversal, topological sort, union-find, and shortest path |
-| `string/` | 7 | string matching, subsequence checks, and sliding window |
+| `string/` | 12 | string matching, subsequence checks, sliding window, and palindrome problems |
 | `dynamicprogramming/` | 15 | 1D DP, 2D DP, knapsack-style, interval DP, and palindrome problems |
 | `priorityqueue/` | 5 | heap-based selection, task scheduling, and median stream |
 | `design/` | 11 | system design problems (rate limiter, LRU cache, trie, max stack, counters) |

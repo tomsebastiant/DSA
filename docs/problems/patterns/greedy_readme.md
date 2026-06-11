@@ -34,6 +34,12 @@ Search for `Tags: Greedy`.
 | Reorganize String | `M_ReorganizeString` | count character frequencies and use a max-heap to always place the two most frequent remaining characters side by side |
 | Video Stitching | `M_VideoStitching` | sort clips by start; two-tier greedy loop extends the coverage frontier to the farthest clip reachable from the current boundary |
 | Minimum Number of Taps to Open to Water a Garden | `H_MinTaps` | convert each tap to its watering interval, then apply the same interval-cover greedy as Jump Game II; return -1 if no tap bridges a gap |
+| Longest Palindrome | `E_LongestPalindrome` | count character frequencies; every pair contributes 2 to the length; one odd-frequency character can sit at the center |
+| Longest Palindrome by Concatenating Two Letter Words | `M_LongestPalindromeWith2LetterWords` | pair each word with its reverse; self-palindromic words (e.g. "aa") place pairs symmetrically, one leftover can be the center |
+| Largest Palindromic Number | `M_LargestPalindromeNumber` | count digit frequencies; greedily place largest digit pairs first (outer positions); fallback to 'b' at the end when all digits are 'a' |
+| Minimum Deletions to Make Frequencies Unique | `M_MinDeletions` | sort frequencies descending; for each, decrement until an unclaimed slot is found — each decrement is one deletion |
+| Break a Palindrome | `M_BreakPalindrome` | replace the first non-'a' in the first half with 'a'; if the whole first half is 'a', change the last character to 'b' |
+| Array of Doubled Pairs | `M_ReorderDoubled` | sort keys by absolute value; greedily consume key*2 entries for each key; absolute-value sort handles negatives correctly |
 
 ## Notes
 

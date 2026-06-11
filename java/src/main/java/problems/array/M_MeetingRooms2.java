@@ -37,7 +37,6 @@ import java.util.PriorityQueue;
  */
 public class M_MeetingRooms2 {
     public int minMeetingRooms(int[][] intervals) {
-        int max=0;
         Arrays.sort(intervals,(a,b)->(a[0]-b[0]));
         
         PriorityQueue<Integer> pq = new PriorityQueue<>();

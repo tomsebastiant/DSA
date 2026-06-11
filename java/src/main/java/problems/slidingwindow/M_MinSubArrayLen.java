@@ -25,11 +25,11 @@
 public class M_MinSubArrayLen {
         public int minSubArrayLen(int target, int[] nums) {
         int l=0;
-        int r =0;
+        
         int min =Integer.MAX_VALUE;
         int sum =0;
 
-        for(;r<nums.length;r++){
+        for(int r =0;r<nums.length;r++){
             sum = sum+ nums[r];
             if(sum>=target){
                 while(sum>=target && l <=r){

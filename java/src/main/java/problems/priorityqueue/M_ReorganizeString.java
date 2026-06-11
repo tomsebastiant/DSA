@@ -47,27 +47,19 @@ public class M_ReorganizeString {
         }
 
         StringBuilder sb = new StringBuilder();
+        int[] prev = null;
 
-        while(pq.size()>=2){
-            int[] first = pq.poll();
-            int[] second = pq.poll();
+        while (!pq.isEmpty()) {
+            int[] curr = pq.poll();
+            sb.append((char)(curr[0] + 'a'));
+            curr[1]--;
 
-            // placing the top-2 together guarantees they differ from each other
-            // and from the previously placed pair's second character
-            sb.append((char)('a'+first[0]));
-            sb.append((char)('a'+second[0]));
+            if (prev != null && prev[1] > 0)
+                pq.offer(prev);
 
-            if(--first[1]>0) pq.offer(first);
-            if(--second[1]>0) pq.offer(second);
+            prev = curr;
         }
 
-        if(!pq.isEmpty()){
-            int[] remain = pq.poll();
-            // a leftover count > 1 means this char would have to sit adjacent to itself
-            if(remain[1]>1) return "";
-            sb.append((char)('a'+remain[0]));
-        }
-
-        return sb.toString();
+        return sb.length() == s.length() ? sb.toString() : "";
     }
 }
