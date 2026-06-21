@@ -36,7 +36,6 @@ public class M_HitCounter {
     private int[] times;  // times[i] = the timestamp that last claimed slot i
     private int[] hits;   // hits[i]  = number of hits recorded for that timestamp
 
-    // NOTE: constructor name should be M_HitCounter() to match the class — currently HitCounter()
     public M_HitCounter() {
         // 300 slots = one per second across the 5-minute sliding window
         times = new int[300];

@@ -30,22 +30,21 @@ public class M_MergeInterval {
         if(intervals.length<1){
             return intervals;
         }
-        Arrays.sort(intervals, (a,b)->(a[1]-b[1]));
+        Arrays.sort(intervals, (a,b)->(a[0]-b[0]));
         List<int[]> output = new ArrayList<>();
-        int[] curr = intervals[0];
-        output.add(curr);
-        for(int[] interval:intervals){
-            int curr_end = curr[1];
-            int next_start = interval[0];
-            int next_end = interval[1];
+        output.add(intervals[0]);
 
-            if(curr_end >=next_start){
-                curr[1] = Math.max(curr_end,next_end);
+        for (int i = 1; i < intervals.length; i++) {
+            int[] curr = output.get(output.size() - 1);
+            int[] next = intervals[i];
+            
+            if (curr[1] >= next[0]) {
+                curr[1] = Math.max(curr[1], next[1]);
             } else {
-                curr = interval;
-                output.add(curr);
+                output.add(next);
             }
         }
+        
         return output.toArray(new int[output.size()][]);
     }
 }
