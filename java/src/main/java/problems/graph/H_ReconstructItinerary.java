@@ -41,10 +41,8 @@ import java.util.PriorityQueue;
  * destinations so the lexicographically smallest neighbour is always explored first. DFS exhausts
  * all outgoing edges from a node before prepending it to the result — post-order insertion builds
  * the path in reverse, so dead-end branches naturally end up at the tail of the final list.
- *
- * NOTE: Filename typo — file is H_ReconstructItineray.java (missing 'r' in Itinerary).
  */
-public class H_ReconstructItineray {
+public class H_ReconstructItinerary {
         public List<String> findItinerary(List<List<String>> tickets) {
         Map<String,PriorityQueue<String>> graph = new HashMap<>();
         for(List<String> ticket:tickets){

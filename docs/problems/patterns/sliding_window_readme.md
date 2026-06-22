@@ -26,6 +26,7 @@ For window-maximum problems, also search for `Tags: Deque`.
 | Longest Substring Without Repeating Characters | `M_lengthOfLongestSubstring` | variable size | use a set and shrink until the window is unique again |
 | Find All Anagrams in a String | `M_FindAnagrams` | fixed size | slide a window of p.length(); compare 26-element frequency arrays each step |
 | Minimum Window Substring | `H_MinWindowSubstring` | variable size | expand right to satisfy all character counts, shrink left to minimise; required counter tracks fully-satisfied types |
+| Longest Repeating Character Replacement | `M_LongestRepeatCharReplace` | variable size | window valid when (size - maxFreq) ≤ k; maxFreq is never decremented — prevents shrinking below the current best |
 
 ## Notes
 

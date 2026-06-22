@@ -1,4 +1,4 @@
-﻿package problems.slidingwindow;
+package problems.array;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -28,7 +28,7 @@ import java.util.Map;
  * Output: 3
  *
  * Approach: Build a frequency map left to right. For each number, look up how many previously
- * seen values equal num-k or num+k â€” both directions cover |diff|=k. Adding to the map after
+ * seen values equal num-k or num+k — both directions cover |diff|=k. Adding to the map after
  * the lookup ensures each pair is counted exactly once.
  */
 public class E_CountKDiff {
@@ -44,4 +44,3 @@ public class E_CountKDiff {
         return count;
     }
 }
-

@@ -32,6 +32,7 @@ Search for `Tags: BFS` or `Tags: DFS`.
 | Shortest Path in Binary Matrix | `M_ShortedBinaryPathMatrix` | BFS from (0,0) in all 8 directions; mark cells visited in-place; first time (n-1,n-1) is reached is the shortest clear path |
 | Is Graph Bipartite? | `M_GraphBipartite` | BFS 2-coloring; assign alternating colors to neighbors; any same-color conflict means an odd cycle exists — not bipartite |
 | Alien Dictionary | `H_AlienDictionary` | build a directed char-dependency graph from adjacent word pairs; Kahn's BFS topological sort extracts the ordering; cycle → invalid |
+| Word Ladder II | `H_WordLadder2` | BFS level-by-level builds a parents map (word → all predecessors); DFS backtrack reconstructs every shortest path; full level removed from wordSet before expansion to prevent same-level parent links |
 
 ## DFS problems in this repo
 
@@ -62,6 +63,9 @@ Search for `Tags: BFS` or `Tags: DFS`.
 | Symmetric Tree | `E_SymmetricTree` | recursively check that left and right subtrees are mirror images |
 | Surrounded Regions | `M_SurroundedRegions` | DFS from every border 'O' marks safe cells with a sentinel; a final pass flips remaining 'O's to 'X' and restores sentinels |
 | Combination Sum | `M_CombinationSum` | backtracking with a start index to build combinations; reuse allowed so the same candidate can be picked again |
+| Critical Connections | `H_CriticalConnections` | Tarjan's bridge-finding; disc[u] = discovery time, low[u] = lowest ancestor reachable via back edges; edge (u,v) is a bridge when low[v] > disc[u] |
+| Reconstruct Itinerary | `H_ReconstructItinerary` | Hierholzer's Eulerian path; min-heap per airport for lex order; post-order addFirst builds the path in reverse |
+| Longest Increasing Path in a Matrix | `H_LongestIncreasingPathMatrix` | DFS+memo from every cell; strict inequality makes the dependency graph a DAG so no visited set is needed |
 
 ## Notes
 

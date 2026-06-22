@@ -23,6 +23,8 @@ Search for `Tags: DFS` in the `backtracking/` folder.
 | Problem | File | Key idea |
 |---------|------|----------|
 | Letter Combinations of a Phone Number | `M_LetterCombination` | at each digit pick one mapped letter, recurse to the next digit, then delete the character to try the next letter |
+| Combination Sum | `M_CombinationSum` | backtracking with a start index; reuse allowed so the same candidate can be picked again at the same level |
+| Word Break II | `H_WordBreak2` | DFS tries every dictionary prefix from the current position; memoize by start index to avoid recomputing the same suffix |
 
 ## The three-step template
 

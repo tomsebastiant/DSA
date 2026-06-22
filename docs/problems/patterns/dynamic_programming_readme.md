@@ -35,6 +35,8 @@ Search for `Tags: DynamicProgramming`.
 | Palindromic Substrings | `M_CountPalindrome` | Interval DP | count all palindromic substrings; same expand-around-center approach; DP version also included as comment |
 | Burst Balloons | `H_BurstBalloons` | Interval DP | dp[i][j] = max coins from the balloons between i and j; choose the last balloon to burst to remove dependency on already-burst neighbours |
 | Longest Palindromic Subsequence | `M_LongestPalindromeSubsequence` | Interval DP | dp[i][j] = LPS length of s[i..j]; fill by window length; extend by 2 when ends match, otherwise take the better single-end drop |
+| Longest Increasing Path in a Matrix | `H_LongestIncreasingPathMatrix` | DFS+memo (top-down 2D DP) | DFS from every cell; strict inequality makes the grid a DAG so cached paths never become stale |
+| Word Break II | `H_WordBreak2` | DFS+memo (top-down 1D DP) | DFS tries every prefix that is a dictionary word; memoize by start index to avoid recomputing the same suffix |
 
 ## Notes
 

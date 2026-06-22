@@ -46,7 +46,7 @@ public class H_CriticalConnections {
     private int timer = 0;
     private List<List<Integer>> bridges;
 
-    public List<List<Integer>> criticalConnections(int n, List<List<Integer>> connections) {
+    public List<List<Integer>> H_CriticalConnections(int n, List<List<Integer>> connections) {
         graph = new ArrayList<>();
         for(int i=0;i<n;i++) graph.add(new ArrayList());
         for(List<Integer> conn:connections){
